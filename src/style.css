@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.form-usuario div {
+    margin: 10px;
+}
+
+.form-usuario label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 28px;
+}
+
+.input-campo-texto {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 28px;
+    background-color: #ffffff;
+    width: 120%;
+    border-color: black;
+    padding: 24px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 60px;
+}
+
+.campo-selecao {
+    display: block;
+    margin-bottom: 8px;
+    background-color: #ffffff;
+    font-size: 24px;
+    width: 120%;
+    border-color: black;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 60px;
+}
+
+.check-box {
+    margin: 16px 0;
+    border-radius: 8px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.check-box input {
+    display: none; /* Oculta o checkbox original */
+}
+
+.check-box span {
+    position: relative;
+    padding-left: 35px; /* Espaço para o "checkbox" */
+    line-height: 25px;
+}
+
+.check-box span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: 2px solid #cccccc; /* Cor do contorno */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.check-box input:checked + span::before {
+    background-color: #007bff; /* Cor azul quando marcado */
+    border-color: #007bff;
+}
+
+.check-box input:checked + span::after {
+    content: '✓'; /* Marca de seleção */
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff; /* Cor da marca de seleção */
+    font-size: 18px;
+}
+
+.btn-criar-usuario {
+    background-color: #e43d3d;
+    border-radius: 18px;
+    font-weight: 100;
+    font-size: 18px;
+    padding: 20px;
+    border: none;
+    color: #ffff;
+    width: 260px;
+    cursor: pointer;
+}
+
+.btn-criar-usuario:hover {
+    color: #ffd8d8;
+}
+
+.title-campanhas {
+    margin: 10px;
+    font-size: 38px;
+    padding: 24px;
+}
